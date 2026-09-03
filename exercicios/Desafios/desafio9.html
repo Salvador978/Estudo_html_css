@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de adição de vídeo</title>
+</head>
+<body>
+    <h1>Desafio de adição de vídeo</h1>
+    
+    <p>
+        Neste desafio vamos adicionar vídeos ao nosso site. Usando a tag <code>&lt;video&gt;</code> do HTML5, podemos adicionar vídeos hospedados localmente de forma simples e eficiente.<br>
+        Porém, utilizando a tag <code>&lt;iframe&gt;</code>, podemos incorporar vídeos de plataformas externas como YouTube, Vimeo, entre outras.<br>
+        Abaixo temos exemplos de vídeos adicionados utilizando ambas as abordagens:
+    </p>
+
+    <h2>Vídeo externo (YouTube com &lt;iframe&gt;)</h2>
+    <iframe 
+        width="560" 
+        height="315" 
+        src="https://www.youtube.com/embed/KKg7-N9q9zQ?si=nUX5g5n12LhGpp9u" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen>
+    </iframe>
+
+    <h2>Vídeo local (com &lt;video&gt;)</h2>
+    <video width="320" height="240" controls>
+        <source src="videos/meu-video.mp4" type="video/mp4">
+        Seu navegador não suporta a reprodução deste vídeo.
+    </video>
+</body>
+</html>
